@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .the-demo-wrap{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        .window {
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+        }
+        .slider{
+            width: 300px;
+            height: 100px;
+            animation: myfirst 2s linear infinite alternate;
+            background: red;
+        }
+
+       /* .item1, .item2, .item3 {
+            float: left;
+            width: 100px;
+            height: 100px;
+        }*/
+
+        .item1 {
+            height: 100%;
+            width: 100%;
+            color: black;
+        }
+
+        .item2 {
+            color: black;
+        }
+
+        .item3 {
+            color: black;
+        }
+
+        @keyframes myfirst
+        {
+            0% {transform: translateX(0px);}
+            50% {transform: translateX(-100px);}
+            100% {transform: translateX(-200px);}
+        }
+        .div{
+            border-radius:50px;
+            width:200px;
+            height:200px;
+            animation:mycircle 2s linear infinite alternate;
+            background: antiquewhite;
+            margin:  100px auto;
+        }
+
+        @keyframes mycircle {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="the-demo-wrap">
+        <div class='window'>
+            <div class='slider'>
+                <div class='item1'>1111111111222333333333333344444</div>
+               <!-- <div class='item2'>22222222222</div>
+                <div class='item3'>33333333333</div>-->
+            </div>
+        </div>
+        <div class="div"></div>
+    </div>
+</body>
+</html>
